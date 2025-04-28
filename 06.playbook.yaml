@@ -1,13 +1,13 @@
 - name: variables from prompt
   hosts: localhost
   vars_prompt:
-  - name: USERNAME
-    prompt: pls enter your username
-    private: false
+  - name: USERNAME ## what variable you want to pass like sravan then this USERNAME stories #
+    prompt: pls enter your username # prompt means asks our username #
+    private: false # false means shows the text # true means shows the not shows #
   - name: PASSWORD
     prompt: pls enter your PASSWORD
     private: true
   tasks:
   - name: printing variables
     ansible.builtin.debug:
-     msg: "username {{USERNAME}}, password {{PASSWORD}}"    
+     msg: "username {{USERNAME}}, password {{PASSWORD}}" # what we given username or password that stories here #   

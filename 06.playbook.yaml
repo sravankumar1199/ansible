@@ -1,0 +1,13 @@
+- name: variables from prompt
+  hosts: localhost
+  vars_prompt:
+  - name: USERNAME
+    prompt: pls enter your username
+    private: false
+  - name: PASSWORD
+    prompt: pls enter your PASSWORD
+    private: true
+  tasks:
+  - name: printing variables
+    ansible.builtin.debug:
+     msg: "username {{USERNAME}}, password {{PASSWORD}}"    

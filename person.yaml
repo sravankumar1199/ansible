@@ -1,0 +1,37 @@
+- name: sravan
+  dob: 04-08-2002
+    ### this is map ##
+  address: 
+   city: hyderabad
+   country: india
+   dob: 202
+   street: DD Colony
+   ###  list of addressess ####
+  addresses:
+  - type: prem
+    city: hyderabad
+    country: india
+  - type: current
+    city: california
+    country: US
+#### 2nd person information ####
+- name: mallesh
+  dob: 04-08-2002
+    ### this is map ##
+  address: 
+   city: hyderabad
+   country: india
+   dob: 205
+   street: DD Colony
+   ###  list of addressess ####
+  addresses:
+  - type: prem
+    city: hyderabad
+    country: india
+  - type: current
+    city: california
+    country: US
+
+
+##### if you are writing list of servers or list of addresses or then use ## - ## ###
+### if you are no using list of servers no need to use this ## - #########

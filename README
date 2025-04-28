@@ -1,0 +1,53 @@
+Ansible is heterogenous
+#### its runs all flovours like ubuntu,centos,fedora...automative change the command based on flavour #
+
+Ansible can scale or configar at a time
+### its configur server at a time ######
+
+Ansible take care of validation and echo statement to users
+##### its doesn't need validation...####
+
+Ansible is easy syntax compare to shell script
+
+
+PUSH Architecture 
+### ansible server push configar to node ###
+
+PULL Architecture
+### first node push configur to chef server then chef server pull configur to node ###
+### in chef server nodes every 30 mins nodes downloads the configar from chef server ###
+
+ansible is configuration managament tool
+## installing packages
+## installing programmming languages
+## installing buildtools
+## creation of users,folders etc
+## setting permissions
+
+PULL
+## nodes should connect to the servers through agent software.
+
+PUSH
+## THERE IS NO NEED TO DOWNLOAD AGENT INSTALLATION
+## servers push configur to the nodes directly
+## ansible use ssh authentication to connect to the server
+## ansible server connects node through ssh
+
+Geography - us,uk,In,Aus
+Env - Dev,QA,Prod
+component - Web,App,DB
+Server - mongodb,catalogue,cart
+
+roboshop-us-dev-db-mongodb-01
+
+## Adobe command ## AD-HOC commands
+ansible -i inventory mongodb --become -e ansible_user=centos -e ansible_password=DevOPs -m ansible.builtin.yum -a "name=nginx state=installed"
+
+ansible -i inventory mongodb --become -e ansible_user=centos -e ansible_password=DevOps -a ansible.builtin.service -a "name=nginx state=started"
+
+## YAML: yet another markup language
+for ansible,nearly every yaml file starts with a list
+each item in the list is a key-valur pair commonly called dictionary
+## Name_sravan ## Name is key ## sravan is valur ##
+extention for playbook file is .yaml
+before the value space is must ## Ex Name: sravan

@@ -3,6 +3,6 @@
   vars_files:
   - variables05.yaml
   tasks: ## why variables.yaml files separate and playbook separate # easly edit in playbook variable refer to playbook ##
-  - name: print the variables
+  - name: printing variables
     ansible.builtin.debug:
      msg: "I am learnig {{NAME}}, DURATION IS {{DERATION}}, TRAINER IS {{TRAINER}}"

@@ -1,6 +1,7 @@
 - name: variable in ansible
   hosts: mongodb
-  tasks:
+  tasks:  ## debug used for message pring syntax ##
   - name: pring the HELLO WORLD
     ansible.builtin.debug:
-     msg: HELLO THIS IS PRINT SYNTAX IN ANSIBLE
+     msg: "HELLO THIS IS MESSAGE PRINT SYNTAX IN ANSIBLE"
+

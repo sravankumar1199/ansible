@@ -1,0 +1,6 @@
+- name: variable in ansible
+  hosts: mongodb
+  tasks:
+  - name: pring the HELLO WORLD
+    ansible.builtin.debug:
+     msg: "HELLO THIS IS PRINT SYNTAX IN ANSIBLE"

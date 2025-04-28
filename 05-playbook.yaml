@@ -1,6 +1,6 @@
 - name: variables form files
   hosts: localhost
-  vars_files: ## if variable file in same folder so give and refer name like variable.yaml bur variable file is another folder give path like c drive, or d drive
+  vars_files: ## if variable file in same folder so give and refer name like variable.yaml but variable file is another folder give path like c drive, or d drive
   - variables05.yaml
   tasks: ## why variables.yaml files separate and playbook separate # easly edit in playbook variable refer to playbook ##
   - name: printing variables

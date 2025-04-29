@@ -3,4 +3,4 @@
   tasks: # THIS IS VARIABLES IN INVENTORY FILE AND RUNNING THE SCRIPT ##
   - name: print mongodb username                                   ## variable in invenory file ##
     ansible.builtin.debug:                                         ## MONGO_USERNAME=MONGOADMIN ##
-     msg: "username is {{MONGO_USERNAME}}"                         ## MONGO_DB=CATA ##
+     msg: "username is: {{MONGO_USERNAME}}"                         ## MONGO_DB=CATA ##

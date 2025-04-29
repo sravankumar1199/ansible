@@ -2,7 +2,7 @@
   hosts: localhost
   vars:
   - money: "100rs"
-    land: "100squres"
+    land: "100hectars"
   tasks:
   - name: inherit values from play
     ansible.builtin.debug:

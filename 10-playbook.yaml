@@ -5,9 +5,9 @@
   - AGE: 23        ## Any number is called number ## 
   - isDevOps: "true" ## True or False is called boolean ##
   - Skills:          ## Any list of variables in single place is called list variable ##
-     AWS
-     DEVOPS
-     DOCKER
+    - AWS
+    - DEVOPS
+    - DOCKER
   - EXPERIENCE:  ## Any filter variable is called map ##
      DEVOPS: 1      ## Datatypes means {{}},-,=,+ these are datatypes in scripts no much prefer of datatypes ##
      AWS: 2

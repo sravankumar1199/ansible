@@ -1,8 +1,10 @@
-- name: print variables form inventory
-  hosts: localhost
-  vars_files:
-  - inventory
-  tasks:
-  - name: printing variables
+- name: variables form inventory
+  hosts: mongodb
+  tasks: # THIS IS VARIABLES IN INVENTORY FILE AND RUNNING THE SCRIPT ##
+  - name: print mongodb username 
     ansible.builtin.debug:
-     msg: "mongo_username: {{MONGO_USERNAME}}"
+     msg: "username is {{MONGO_USERNAME}}, db is {{MONGO_DB}}"
+
+     ## [mongodb.vars] ##
+    ## MONGO_USERNAME=MONGOADMIN ## 
+    ##MONGO_DB=CATA ##

@@ -1,0 +1,32 @@
+- name: ansible variable datatypes
+  hosts: localhost
+  vars:
+  - NAME: "sravan" ## Any test or name is called string ##
+  - AGE: 23        ## Any number is called number ## 
+  - isDevOps: "true" ## True or False is called boolean ##
+  - Skills:          ## Any list of variables in single place is called list variable ##
+    - AWS
+    - DEVOPS
+    - DOCKER
+  - EXPERIENCE:  ## Any filter variable is called map ##
+    DEVOPS: 1      ## Datatypes means {{}},-,=,+ these are datatypes in scripts no much prefer of datatypes ##
+    AWS: 2
+    DOCKER: 3
+  tasks:
+  - name: print string variable
+    ansible.builtin.debug:
+     msg: "{{NAME}}"
+  - name: print number variable
+    ansible.builtin.debug:
+     msg: "{{AGE}}"
+  - name: print boolean variable
+    ansible.builtin.debug:
+     msg: "{{isDevOps}}"
+  - name: print list variable
+    ansible.builtin.debug:
+     msg: "{{Skills}}"
+  - name: print map variable
+    ansible.builtin.debug:
+     msg: "{{EXPERIENCE}}"
+      
+

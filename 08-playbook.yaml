@@ -1,0 +1,8 @@
+- name: print variables form inventory
+  hosts: localhost
+  vars_files:
+  - inventory
+  tasks:
+  - name: printing variables
+    ansible.builtin.debug:
+     msg: "mongo_username: {{MONGO_USERNAME}}"

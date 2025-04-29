@@ -1,2 +1,6 @@
 [mongodb]
 172.31.21.113
+
+[mongodb.vars]
+MONGO_USERNAME=MONGOADMIN
+MONGO_DB=CATA

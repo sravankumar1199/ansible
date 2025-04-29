@@ -1,5 +1,5 @@
 - name: variables from commandline 
-  hosts: mongodb
+  hosts: localhost
   tasks:  ## this printing variables from commandline ##
   - name: print variables from commandline
     ansible.builtin.debug:

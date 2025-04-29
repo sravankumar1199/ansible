@@ -1,6 +1,2 @@
 [mongodb]
 172.31.21.113
-
-[mongodb]
-MONGO_USERNAME=mongodbadmin
-MONGO_DB=catagories

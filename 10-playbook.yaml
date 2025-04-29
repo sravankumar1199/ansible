@@ -9,9 +9,9 @@
     - DEVOPS
     - DOCKER
   - EXPERIENCE:  ## Any filter variable is called map ##
-    - DEVOPS: 1      ## Datatypes means {{}},-,=,+ these are datatypes in scripts no much prefer of datatypes ##
-    - AWS: 2
-    - DOCKER: 3
+     DEVOPS: 1      ## Datatypes means {{}},-,=,+ these are datatypes in scripts no much prefer of datatypes ##
+     AWS: 2
+     DOCKER: 3
   tasks:
   - name: print string variable
     ansible.builtin.debug:

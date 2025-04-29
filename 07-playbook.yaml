@@ -1,0 +1,16 @@
+- name: variables at task level
+  hosts: localhost
+  vars: ## here inherit father property ##
+  - money: "100rs"
+    land: 100squres
+  tasks:
+  - name: inherit values from play or vars # this is for father statement #
+    ansible.builtin.debug:
+    msg: "MONEY: {{money}}, LAND: {{land}}"
+  - name: inherit values from play and add values # here father property comes to his children # this is children statament #
+    vars:
+    - money: "200"
+      houses: "3 houses"
+    ansible.builtin.debug:
+     msg: "MONEY: {{money}}, LAND: {{land}}, HOUSES: {{houses}}"
+        

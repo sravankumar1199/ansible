@@ -51,3 +51,9 @@ each item in the list is a key-valur pair commonly called dictionary
 ## Name_sravan ## Name is key ## sravan is valur ##
 extention for playbook file is .yaml
 before the value space is must ## Ex Name: sravan
+
+## INHERITANCE TOPIC IN ANSIBLE ##
+you inherit the values from parent,as a children you can overridethe values or you can add the values
+for example:
+father: HE earned some property
+children: by default thet inherit the property

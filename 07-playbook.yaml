@@ -2,7 +2,7 @@
   hosts: localhost
   vars: ## here inherit father property ##
   - money: "100rs"
-    land: 100squres
+    land: "100squres"
   tasks:
   - name: inherit values from play # this is for father statement #
     ansible.builtin.debug:

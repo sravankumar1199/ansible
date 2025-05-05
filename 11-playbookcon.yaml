@@ -4,7 +4,15 @@
   - name: check roboshop user exist or not
     ansible.builtin.command: id roboshop ## this command checks user exist or not ##
     register: output ## this is stors the output ##
-    ignore_errors: true
+    ignore_errors: true ## errors ignore is exception topic ##
   - name: print the command output ## this is print the output ##
     ansible.builtin.debug:
      msg: output is {{output}}
+  - name: print exit status
+    ansible.builtin.debug: ## rc means exit status ## rc apperas in error format ##
+     msg: "{{output.rc}}"
+  - name: create user roboshop
+    become: yes
+    ansible.builtin.user: ## when rc=0 user not created otherwise rc=1 or any number then user created ##
+     name: roboshop
+    when: output.rc!=0 ## rc! not equal to ##

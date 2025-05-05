@@ -2,8 +2,8 @@
   hosts: localhost
   vars:
    NAME: DEVOPS
-  tasks:
+  tasks: ## this if name is devops then only this script will run ##
   - name: run this if NAME is DEVOPS
     ansible.builtin.debug:
-     msg: "HELLO...{{NAME}}
+     msg: "HELLO...{{NAME}}"
     when: NAME == DEVOPS

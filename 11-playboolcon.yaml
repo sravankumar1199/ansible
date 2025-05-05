@@ -1,0 +1,9 @@
+- name: create user
+  hosts: localhost
+  tasks:
+  - name: check roboshop user exist or not
+    ansible.builtin.command: id roboshop ## this command checks user exist or not ##
+    register: output ## this is stors the output ##
+  - name: print the command output ## this is print the output ##
+    ansible.builtin.debug:
+     msg: output is {{output}}

@@ -57,3 +57,16 @@ you inherit the values from parent,as a children you can overridethe values or y
 for example:
 father: HE earned some property
 children: by default thet inherit the property
+
+###### Condition Topic in Ansible ########
+if [expression]
+Then
+these command will run if true
+Else
+these command will run if expression false
+
+when expression is true then module/collection will run, otherwise it will not run.
+
+creating roboshop user, condition 
+check user exist or not
+create if not exist

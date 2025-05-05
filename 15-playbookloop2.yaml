@@ -1,0 +1,12 @@
+- name: remove packages
+  hosts: mongodb
+  become: yes
+  tasks:
+  - name: remove packages
+    ansible.builtin.remove:
+     name: "{{item}}" ## item means nginx stors in item ## 
+     state: removeds
+    loop:
+    - nginx
+    - postfix
+    - maven

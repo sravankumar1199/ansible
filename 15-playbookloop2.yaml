@@ -5,7 +5,7 @@
   - name: Remove packages
     ansible.builtin.remove:
      name: "{{item}}" ## item means nginx stors in item ## 
-     state: removed
+     state: absent
     loop:
     - nginx
     - postfix

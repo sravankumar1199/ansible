@@ -1,12 +1,13 @@
-- name: Remove packages
+- name: install packages
   hosts: mongodb
   become: yes
   tasks:
-  - name: Remove packages
-    ansible.builtin.remove:
-     name: "{{item}}" ## item means nginx stors in item ## 
-     state: absent
+  - name: install packages
+    ansible.builtin.yum:
+     name: "{{item.name}}"
+     state: "{{item.state}}"
     loop:
-    - nginx
-    - postfix
-    - maven
+    - {name: 'nginx', state: 'absent'}
+    - {name: 'postfix', state: 'installed'}
+    - {name: 'maven', state: 'absent'}
+    - {name: 'mailx', state: 'installed'}

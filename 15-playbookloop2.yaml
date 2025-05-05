@@ -6,7 +6,7 @@
     ansible.builtin.yum:
      name: "{{item.name}}"
      state: "{{item.state}}"
-    loop:
+    loop: ## installing and removeing packages using loop Topic ##
     - {name: 'nginx', state: 'absent'}
     - {name: 'postfix', state: 'installed'}
     - {name: 'maven', state: 'absent'}

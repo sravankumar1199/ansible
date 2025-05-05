@@ -70,3 +70,6 @@ when expression is true then module/collection will run, otherwise it will not r
 creating roboshop user, condition 
 check user exist or not
 create if not exist
+
+## In loops Topic In Ansible ##
+In Playbook why {{item}} means what name you given in playbook that will execute for example hello..{{item}} and give some name sravan like hello sravan.
